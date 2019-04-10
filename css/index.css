@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a {
+    color: dodgerblue;
+}
+
+body {
+    background-color: #F0F0F0;
+}
+
+li {
+    /* background-color: #e00; */
+}
+
+.main {
+    display: flex;
+    /* background-color: aqua; */
+    flex-flow: row wrap;
+    justify-content: start;
+}
+
+.main .card {
+    margin: 10px;
+    width: 32.2%;
+    min-width: 350px;
+    background-color: #FFF;
+    padding-bottom: 10px;
+}
+
+.title {
+    color: #333;
+    font-size: 16px;
+    padding: 10px 10px 5px 10px;
+}
+
+.des {
+    color: #666;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 10px;
+    text-indent: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.card_title {
+    border-bottom: 2px solid #B94DE7;
+}
+
+.card_title span:nth-child(1) {
+    display: inline-block;
+    padding-left: 10px;
+    color: #fff;
+    padding-right: 10px;
+    line-height: 35px;
+    background-color: #B94DE7;
+}
+
+.card_title a:nth-last-child(1) {
+    font-size: 14px;
+    float: right;
+    line-height: 35px;
+    margin-right: 10px;
+}
+
+.card_content:hover {
+    background-color: #F0F0F0;
+    cursor: pointer;
+}
+
+.card_info {
+    display: flex;
+    padding: 5px 6px;
+    /* background-color: #BD5; */
+}
+
+.card_info .space {
+    flex-grow: 1;
+}
+
+.card_info span {
+    display: inline-block;
+    min-width: 90px;
+    /* background-color: #B94DE7; */
+}
+
+.icon {
+    color: #bdbdbd;
+    font-size: 13px;
+}
+
+.icon-time::before {
+    content: "\e94e"
+}
+
+.icon-see::before {
+    content: "\e9ce"
+}
+
+.icon-loading {
+    display: block;
+    line-height: 300px;
+    min-height: 300px;
+    text-align: center;
+    width: 50px;
+    /* background-color: #666; */
+    color: #B94DE7;
+    margin: auto;
+}
+
+.icon-loading::before {
+    content: "\e982";
+    font-size: 50px;
+    color: #B94DE7;
+    position: absolute;
+    margin-left: -22px;
+    animation: loading 700ms linear 0s infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

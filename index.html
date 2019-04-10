@@ -1,0 +1,122 @@
+<html>
+
+<head>
+    <title>title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" href="https://www.wanandroid.com/resources/image/favicon.ico">
+
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link href="./ico/ico.css" rel="stylesheet">
+
+    <link href="./css/index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="main">
+        <!-- card -->
+        <div class="card card1">
+            <div class="card_title"><span>测试标题</span><a href="javascript:">更多>></a></div>
+            <div class="card_loading">
+                <span class="icon icon-loading">&nbsp;</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_title"><span>测试标题</span><a href="javascript:">更多>></a></div>
+            <div class="card_loading">
+                <span class="icon icon-loading">&nbsp;</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_title"><span>测试标题</span><a href="javascript:">更多>></a></div>
+            <div class="card_loading">
+                <span class="icon icon-loading">&nbsp;</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_title"><span>测试标题</span><a href="javascript:">更多>></a></div>
+            <div class="card_loading">
+                <span class="icon icon-loading">&nbsp;</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_title"><span>测试标题</span><a href="javascript:">更多>></a></div>
+            <div class="card_loading">
+                <span class="icon icon-loading">&nbsp;</span>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card_title"><span>测试标题</span><a href="javascript:">更多>></a></div>
+            <ul>
+                <li>
+                    <div class="card_content">
+                        <h4 class="title">正式发布 Android 架构组件 1.0 稳定版 | 附带中文介绍视频</h4>
+                        <article class="des">几十亿的设备都在用 Android 系统，从高端手机到飞机上的影音娱乐系统，应有尽有，不一而足。而 Android OS
+                            则为这几十亿的设备保驾护航，高效管理资源，保障运行流畅，然而有时候却增加了开发卓越 App 的难度。为了简化开发流程，我们在 Google </article>
+                        <div class="card_info"><i class="space"></i> <span class="icon icon-see"> 2019</span><span
+                                class="icon icon-time"> 2019-4-10</span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card_content">
+                        <h4 class="title">正式发布 Android 架构组件 1.0 稳定版 | 附带中文介绍视频</h4>
+                        <article class="des">几十亿的设备都在用 Android 系统，从高端手机到飞机上的影音娱乐系统，应有尽有，不一而足。而 Android OS
+                            则为这几十亿的设备保驾护航，高效管理资源，保障运行流畅，然而有时候却增加了开发卓越 App 的难度。为了简化开发流程，我们在 Google </article>
+                        <div class="card_info"><i class="space"></i> <span class="icon icon-see"> 2019</span><span
+                                class="icon icon-time"> 2019-4-10</span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card_content">
+                        <h4 class="title">正式发布 Android 架构组件 1.0 稳定版 | 附带中文介绍视频</h4>
+                        <article class="des">几十亿的设备都在用 Android 系统，从高端手机到飞机上的影音娱乐系统，应有尽有，不一而足。而 Android OS
+                            则为这几十亿的设备保驾护航，高效管理资源，保障运行流畅，然而有时候却增加了开发卓越 App 的难度。为了简化开发流程，我们在 Google </article>
+                        <div class="card_info"><i class="space"></i> <span class="icon icon-see"> 2019</span><span
+                                class="icon icon-time"> 2019-4-10</span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card_content">
+                        <h4 class="title">正式发布 Android 架构组件 1.0 稳定版 | 附带中文介绍视频</h4>
+                        <article class="des">几十亿的设备都在用 Android 系统，从高端手机到飞机上的影音娱乐系统，应有尽有，不一而足。而 Android OS
+                            则为这几十亿的设备保驾护航，高效管理资源，保障运行流畅，然而有时候却增加了开发卓越 App 的难度。为了简化开发流程，我们在 Google </article>
+                        <div class="card_info"><i class="space"></i> <span class="icon icon-see"> 2019</span><span
+                                class="icon icon-time"> 2019-4-10</span></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- <link href="./css/index.css" rel="stylesheet" /> -->
+        <script src="./js/http.js"></script>
+        <script src="./js/fill_list.js"></script>
+        <script src="./js/index.js"></script>
+
+
+        <script>
+            http.get("https://www.angcyo.com/api/php/common/p/url_mapping", {
+                onData: (data) => {
+                    console.log(data)
+                }
+            });
+            fill.fill(".card1", [{
+                title: "title1",
+                des: "title1 des",
+                see: "999",
+                time: "2019.8.1"
+            }, {
+                title: "title1",
+                des: "title1 des",
+            }])
+        </script>
+
+
+</body>
+
+</html>
