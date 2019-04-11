@@ -1,6 +1,7 @@
 ProgressBar.show()
 
 const BASE_URL = 'http://www.angcyo.com:9898'
+// const BASE_URL = 'http://127.0.0.1:9898'
 var count = 0
 
 fill.loading('.jcodecraeer')
