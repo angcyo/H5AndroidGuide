@@ -33,6 +33,7 @@
                     })
 
                     anim.opacity(card_content, 0, 1, index * 100)
+                    //anim.marginTop(card_content, -40, 0, index * 100)
                 })
             }
 
