@@ -14,3 +14,10 @@ http.get("http://127.0.0.1:9898/angcyo", {
         fill.fill(".angcyo", data)
     }
 });
+
+fill.loading('.ithome')
+http.get("http://127.0.0.1:9898/ithome", {
+    onData: (data) => {
+        fill.fill(".ithome", data)
+    }
+});
