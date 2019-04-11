@@ -16,7 +16,7 @@
                     list = JSON.parse(data)
                 }
 
-                list.forEach((item) => {
+                list.forEach((item, index) => {
                     //console.log(item)
 
                     var card_content = append(append(ul, "li"), "div", "card_content")
@@ -31,13 +31,18 @@
                     card_content.addEventListener("click", () => {
                         open(item.link)
                     })
+
+                    anim.opacity(card_content, 0, 1, index * 100)
                 })
             }
 
         },
         loading: function (element) {
             if (element) {
+                var rootDiv = document.querySelector(element)
+                removeNotFirst(rootDiv)
 
+                append(append(rootDiv, "div", 'card_loading'), "span", ['icon', 'icon-loading'], ' ')
             }
         }
     }
@@ -84,7 +89,6 @@
     //移除非第一个子元素的所有元素
     function removeNotFirst(e) {
         let childs = e.childNodes
-        console.log(childs.length)
         for (i = childs.length - 1; i > 1; i--) {
             childs[i].remove()
         }

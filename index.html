@@ -15,10 +15,8 @@
 <body>
     <div class="main">
         <!-- card -->
-        <div class="card card1">
-            <div class="card_title"><span>测试标题</span><a href="javascript:">更多>></a></div>
-            <div class="card_loading">
-                <span class="icon icon-loading">&nbsp;</span>
+        <div class="card jcodecraeer">
+            <div class="card_title"><span>泡在网上的日子</span><a href="http://www.jcodecraeer.com" target="_blank">更多>></a>
             </div>
         </div>
 
@@ -94,15 +92,16 @@
         </div>
 
         <!-- <link href="./css/index.css" rel="stylesheet" /> -->
+        <script src="./js/anim.js"></script>
         <script src="./js/http.js"></script>
         <script src="./js/fill_list.js"></script>
         <script src="./js/index.js"></script>
 
-
         <script>
+            fill.loading('.jcodecraeer')
             http.get("http://127.0.0.1:9898/", {
                 onData: (data) => {
-                    fill.fill(".card1", data)
+                    fill.fill(".jcodecraeer", data)
                 }
             });
         </script>
