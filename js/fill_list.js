@@ -24,7 +24,7 @@
                     append(card_content, "article", "des", item.des)
                     var card_info = append(card_content, "div", "card_info")
                     append(card_info, "i", "space")
-                    append(card_info, "span", 'icon', ` ${item.user}`)
+                    append(card_info, "span", 'icon', `${item.user}`)
                     append(card_info, "span", ["icon", "icon-see"], " " + item.see)
                     append(card_info, "span", ["icon", "icon-time"], " " + item.time)
 
