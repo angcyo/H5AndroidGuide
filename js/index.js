@@ -28,3 +28,10 @@ http.get("http://127.0.0.1:9898/androidweekly", {
         fill.fill(".androidweekly", data)
     }
 });
+
+fill.loading('.wanandroid')
+http.get("http://127.0.0.1:9898/wanandroid", {
+    onData: (data) => {
+        fill.fill(".wanandroid", data)
+    }
+});
