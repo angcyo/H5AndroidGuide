@@ -35,3 +35,10 @@ http.get("http://127.0.0.1:9898/wanandroid", {
         fill.fill(".wanandroid", data)
     }
 });
+
+fill.loading('.gityuan')
+http.get("http://127.0.0.1:9898/gityuan", {
+    onData: (data) => {
+        fill.fill(".gityuan", data)
+    }
+});
