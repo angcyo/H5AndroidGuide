@@ -29,6 +29,7 @@
                     append(card_info, "span", ["icon", "icon-time"], " " + item.time)
 
                     card_content.addEventListener("click", () => {
+                        ProgressBar.showOnce()
                         open(item.link)
                     })
 
