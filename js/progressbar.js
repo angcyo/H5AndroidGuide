@@ -38,13 +38,24 @@
         let anim_width = 0,
             anim_left = 0,
             anim_value = 0,
-            step = 40,
-            WINDOW_WIDTH = (window.innerWidth ||
-                document.documentElement.clientWidth ||
-                document.body.clientWidth),
-            MAX_WIDTH = WINDOW_WIDTH / 2
+            step = 40
 
         elem.ProgressBarAnim = setInterval(() => {
+            let WINDOW_WIDTH = (window.innerWidth ||
+                    document.documentElement.clientWidth ||
+                    document.body.clientWidth),
+                MAX_WIDTH = WINDOW_WIDTH / 2
+
+            if (WINDOW_WIDTH > 1200) {
+                step = 40
+            } else if (WINDOW_WIDTH > 900) {
+                step = 20
+            } else if (WINDOW_WIDTH > 400) {
+                step = 10
+            } else {
+                step = 5
+            }
+
             with(elem.style) {
                 anim_value += step
                 if (anim_value > MAX_WIDTH) {
