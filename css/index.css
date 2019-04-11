@@ -72,6 +72,8 @@ li {
     margin-right: 10px;
 }
 
+.card_content {}
+
 .card_content:hover {
     background-color: #F0F0F0;
     cursor: pointer;
@@ -89,7 +91,7 @@ li {
 
 .card_info span {
     display: inline-block;
-    min-width: 90px;
+    min-width: 100px;
     /* background-color: #B94DE7; */
 }
 

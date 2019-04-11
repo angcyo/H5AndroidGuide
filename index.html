@@ -100,20 +100,11 @@
 
 
         <script>
-            http.get("https://www.angcyo.com/api/php/common/p/url_mapping", {
+            http.get("http://127.0.0.1:9898/", {
                 onData: (data) => {
-                    console.log(data)
+                    fill.fill(".card1", data)
                 }
             });
-            fill.fill(".card1", [{
-                title: "title1",
-                des: "title1 des",
-                see: "999",
-                time: "2019.8.1"
-            }, {
-                title: "title1",
-                des: "title1 des",
-            }])
         </script>
 
 
